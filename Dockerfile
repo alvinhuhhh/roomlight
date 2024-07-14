@@ -16,6 +16,6 @@ FROM nginx:mainline
 # Copy nginx.conf to /etc
 COPY nginx.conf /etc/nginx/nginx.conf
 # Copy built files to nginx share directory
-COPY --from=build /home/app/dist/roomlight/browser /usr/share/nginx/html
+COPY --from=build /home/app/dist/roomlight /usr/share/nginx/html
 
 EXPOSE 3000
